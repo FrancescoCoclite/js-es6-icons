@@ -2,7 +2,8 @@
     height: 80px;
 }
 .main-sect{
-    height: 100vh;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
 }
 .card{
     width: 200px;

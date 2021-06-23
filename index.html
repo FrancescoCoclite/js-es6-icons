@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Hello, world!</title>
+    <title>FontIcons</title>
   </head>
   <body>
     
@@ -28,7 +28,13 @@
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-items-center">
                     <div class="d-flex  text-uppercase fs-5 mt-4 ">filtra per tipo 
-                    <select name="" id="categoria"><option value="">All</option></select></div>
+                    <select name="" id="categoria">
+                        <option value="all">All</option>
+                        <option value="animal">Animal</option>
+                        <option value="vegetable">Vegetables</option>
+                        <option value="user">User</option>
+                    </select>
+                </div>
                 </div>
             </div>
         </div>
@@ -36,62 +42,9 @@
 
     <section class="bg-secondary main-sect">
         <div class="container-xl">
-            <div class="row">
-                <div class="col-3 mt-5 card bg-light ms-3">
-                    <i class="fas fa-cat"></i>
-                    <p class="text-center">Cat</p>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                    <p class="text-center">Cat</p>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                    <p class="text-center">Cat</p>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                    <p class="text-center">Cat</p>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                    <p class="text-center">Cat</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3 mt-5 card bg-light ms-3">
-                    <i class="fas fa-cat"></i>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3 mt-5 card bg-light ms-3">
-                    <i class="fas fa-cat"></i>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                </div>
-                <div class="col-3 mt-5 card bg-light">
-                    <i class="fas fa-cat"></i>
-                </div>
-            </div>
+            <div class="row" id="riga">
+               
+            </div>    
         </div>
     </section>
 

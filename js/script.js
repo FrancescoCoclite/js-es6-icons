@@ -109,11 +109,38 @@ icons.forEach(element => {
     colore ='color:green;';
   }
   
-  document.getElementById('riga').innerHTML += 
+ document.getElementById('riga').innerHTML += 
   `<div class="col-3 mt-5 card bg-light ms-3">
       <i class="${element.family} ${element.prefix}${element.name}" style="${colore}"></i>
       <p class="text-center text-uppercase" style="${colore}">${element.name}</p>
   </div>`; 
 });
 
-addEventListener
+const select = document.getElementById('categoria');
+
+select.addEventListener("change",function(){
+  const valoreSelect = select.value;
+  if (valoreSelect == 'all'){
+    document.getElementById('riga').innerHTML = '';
+    icons.forEach(element => {
+      document.getElementById('riga').innerHTML += 
+      `<div class="col-3 mt-5 card bg-light ms-3">
+          <i class="${element.family} ${element.prefix}${element.name}" style="${colore}"></i>
+          <p class="text-center text-uppercase" style="${colore}">${element.name}</p>
+      </div>`; 
+    });
+  }else{
+    const filteredIcons = icons.filter((element) => element.type == valoreSelect);
+    document.getElementById('riga').innerHTML = '';
+    filteredIcons.forEach(element => {
+      document.getElementById('riga').innerHTML += 
+      `<div class="col-3 mt-5 card bg-light ms-3">
+          <i class="${element.family} ${element.prefix}${element.name}" style="${colore}"></i>
+          <p class="text-center text-uppercase" style="${colore}">${element.name}</p>
+      </div>`; 
+    });
+      
+  }
+
+});
+
